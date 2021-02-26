@@ -209,3 +209,20 @@ if __name__ == '__main__':
     result = doctest.testmod()
     if result.failed == 0:
         print('ALL TESTS PASSED')
+
+
+
+def custom_reverse(input_list):
+    """Reverse the elements of the input_list.
+    Like input_list.reverse(), custom_reverse(input_list) should reverse the
+    elements of the original list and return nothing (we call this reversing
+    "in place").
+    For example:
+        >>> multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+        >>> custom_reverse(multiples)
+        >>> multiples == [27, 24, 21, 18, 15, 12, 9, 6, 3, 0]
+        True
+    """
+
+    swap_number = custom_len(input_list) // 2
+
